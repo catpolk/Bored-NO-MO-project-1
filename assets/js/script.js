@@ -131,4 +131,4 @@ fetch(apiurl)
     });
 
 
-console.log(accessibility)
+console.log(accessibility)  
