@@ -130,5 +130,3 @@ fetch(apiurl)
     }
     });
 
-
-console.log(accessibility)  

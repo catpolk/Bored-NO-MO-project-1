@@ -21,6 +21,7 @@
       </section>
    </header>
    <section>
+    <form>
     <div class="columns section  container">
         <div class="column is-one-fourth ">
           <div class="control columns">
@@ -90,6 +91,7 @@
                         <button class="button is-responsive is-primary">
                           Submit
                         </button>
+                      </form>                    
         </div>
         <br>
 
@@ -100,7 +102,7 @@
 
    <section class="hero is-small has-text-centered">
     <div class="hero-body">
-      <p class="title">
+      <p class="title" id="activity">
         activity here 
       </p>
       
@@ -108,32 +110,44 @@
   </section>
 <main >
   <div>
-    <div class="columns section  ">
+    <div class="columns section">
       <div class="column  card ">
           <text>Type</text>
             <figure class="card-image">
-              <img src="https://bulma.io/images/placeholders/480x480.png">
+              <img src="./assets/images/busywork.png" id="busywork">
+              <img src="./assets/images/charity.png" id="charity">
+              <img src="./assets/images/cooking.png" id="cooking">
+              <img src="./assets/images/diy.png" id="diy">
+              <img src="./assets/images/education.png" id="education">
+              <img src="./assets/images/music.png" id="music">
+              <img src="./assets/images/recreational.png" id="recreational">
+              <img src="./assets/images/relaxation.png" id="relaxation">
+              <img src="./assets/images/social.png" id="social">
+              <p id="type"></p>
             </figure>
           </div>
           <br>
           <div class="column card ">
             <text>Price</text>
             <figure class="card-image">
-              <img src="https://bulma.io/images/placeholders/480x480.png">
+              <img src="./assets/images/price.png">
+              <p id="price"></p>
             </figure>
            
               </div>
               <div class="column  card">
                 <text>Accesibility</text>
                 <figure class="card-image">
-                  <img src="https://bulma.io/images/placeholders/480x480.png">
+                  <img src="./assets/images/accesibility.png">
+                  <p id="accessibility"></p>
                 </figure>
                 
                 </div>
                   <div class="column  card">
                     <text>Participants</text>
                     <figure class="card-image">
-                      <img src="https://bulma.io/images/placeholders/480x480.png">
+                      <img src="./assets/images/participants.png">
+                      <p id="participants"></p>
                     </figure>
 </div>
 </main>
@@ -158,5 +172,7 @@
   
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
