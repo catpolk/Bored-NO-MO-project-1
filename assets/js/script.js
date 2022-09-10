@@ -130,3 +130,29 @@ fetch(apiurl)
     }
     });
 
+//weather fetching 
+const apiKey = "fd4520c83ce363d53b2477e844a3ab5f";
+
+var fetchButton = document.getElementById('fetch-button');
+fetchButton.addEventListener('click', getApi);
+
+function getApi() {
+  var cityName = document.getElementById("citynameField").value;
+  var geoRequestUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${apiKey}`;
+  
+  fetch(geoRequestUrl)
+    .then(function (response) {
+      return response.json();
+    }).then(function (data){
+      var weatherRequestUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&appid=${apiKey}`;
+      
+      fetch(weatherRequestUrl)
+      .then(function (response) {
+        return response.json();
+      }).then(function (data){
+        console.log(data);
+      });
+    }); 
+    
+}
+
