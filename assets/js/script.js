@@ -144,13 +144,16 @@ function getApi() {
     .then(function (response) {
       return response.json();
     }).then(function (data){
-      var weatherRequestUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&appid=${apiKey}`;
-      
+      var weatherRequestUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&appid=${apiKey}&units=imperial`;
       fetch(weatherRequestUrl)
       .then(function (response) {
         return response.json();
       }).then(function (data){
-        console.log(data);
+        document.getElementById("temp").textContent = data.main.temp;
+        document.getElementById("wind").textContent = data.wind.speed;
+        document.getElementById("humidity").textContent = data.main.humidity;
+        document.getElementById("weather-display").style.display = "block";
+         
       });
     }); 
     

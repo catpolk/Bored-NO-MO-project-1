@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>bored no mo</title>
 </head>
 <body>
@@ -155,7 +156,7 @@
   <div class="card container">
     <div class="card-content">
       <p class="title">
-        Weather
+        Current weather conditions
       </p>
       <!-- fetching weather -->
       <p class="subtitle">
@@ -163,6 +164,12 @@
           <label for="citynameField"> Enter your city: </label>
           <input id="citynameField" type="text">
           <button id="fetch-button" class="btn-cls" type="enterCityName">Get Weather</button>
+          <div id="weather-display">
+            <h2>Current weather conditions</h2>
+            <p>Temperature: <span id="temp"></span> F</p>
+            <p>Wind: <span id="wind"></span> mph</p>
+            <p> Humidity: <span id="humidity"> %</span></p>
+          </div>
 
         </div>
       </p>
