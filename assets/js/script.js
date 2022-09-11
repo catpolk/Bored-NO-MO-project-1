@@ -153,8 +153,9 @@ function getApi() {
         document.getElementById("wind").textContent = data.wind.speed;
         document.getElementById("humidity").textContent = data.main.humidity;
         document.getElementById("weather-display").style.display = "block";
-         
       });
+    }).catch(function(){
+      alert('City entered incorrectly');
     }); 
     
 }

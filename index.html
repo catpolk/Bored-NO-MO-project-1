@@ -155,8 +155,9 @@
 <footer class="section">
   <div class="card container">
     <div class="card-content">
+      <img id="cloud-icon" src="./assets/images/cloudy.png" alt="cloud">
       <p class="title">
-        Current weather conditions
+        Weather
       </p>
       <!-- fetching weather -->
       <p class="subtitle">
@@ -165,10 +166,10 @@
           <input id="citynameField" type="text">
           <button id="fetch-button" class="btn-cls" type="enterCityName">Get Weather</button>
           <div id="weather-display">
-            <h2>Current weather conditions</h2>
-            <p>Temperature: <span id="temp"></span> F</p>
-            <p>Wind: <span id="wind"></span> mph</p>
-            <p> Humidity: <span id="humidity"> %</span></p>
+            <br>
+            <p>Temperature: <span id="temp" class="resultStl"></span> F</p>
+            <p>Wind: <span id="wind" class="resultStl"></span> mph</p>
+            <p> Humidity: <span id="humidity" class="resultStl"></span>%</p>
           </div>
 
         </div>
