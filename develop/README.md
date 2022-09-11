@@ -30,20 +30,21 @@ THEN I am presented with current weather conditions in my city
 
 Utilize any web browser:
 
+https://catpolk.github.io/Bored-NO-MO-project-1/
 
 <img src= "./assets/images/ .jpg">
 
 ## Technologies Used
 
-• Bulma :https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css
+• Bulma: https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css
 
-• Jquery
+• Jquery: https://code.jquery.com/jquery-3.4.1.min.js
 
 • Javascript
 
-• Bored API :http://www.boredapi.com/documentation
+• Bored API: http://www.boredapi.com/documentation
 
-• Weather API :https://openweathermap.org/api/one-call-api
+• Weather API: https://openweathermap.org/api/one-call-api
 
 
 ## Future Development
@@ -87,6 +88,5 @@ SOFTWARE.
 
 ## Badges
 
-[![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
 [![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
