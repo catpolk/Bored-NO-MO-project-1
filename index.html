@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    
     <title>Bored NO MO!</title>
   </head>
 
@@ -19,166 +20,165 @@
             <p class="subtitle container has-text-centered">
             Activities for those struggling with boredom
             </p>
-          </div>
-        </section>
-    </header>
-
-    <section>
-        <!--Dropdown Menu-->
-        <form>
-          <div class="columns section container">
-            <div class="column is-one-fourth">
-              <div class="control columns">
-                <div class="select column">
-                  <select>
-                    <option>Type</option>
-                    <option>Education</option>
-                    <option>Recreational</option>
-                    <option>Social</option>
-                    <option>DIY</option>
-                    <option>Charity</option>
-                    <option>Cooking</option>
-                    <option>Relaxation</option>
-                    <option>Music</option>
-                    <option>Busywork</option>
-                    <option>Random</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="column is-one-fourth">
-              <div class="control columns">
-                <div class="select column">
-                  <select>
-                    <option>Price</option>
-                    <option>0 - free</option>
-                    <option>$</option>
-                    <option>$$</option>
-                    <option>$$$</option>
-                    <option>$$$$</option>
-                    <option>$$$$$</option>
-                    <option>Random</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="column is-one-fourth">
-              <div class="control columns">
-                <div class="select column">
-                  <select>
-                    <option>Participants</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5+</option>
-                    <option>Random</option>
-                  </select>
-                </div>
-              </div>
-            </div> 
-
-            <div class="column is-one-fourth">
-              <div class="control columns">
-                <div class="select column">
-                  <select>
-                    <option>Accessibility</option>
-                    <option>0 - most accessible</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5-least accessible</option>
-                    <option>random</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <button class="button is-responsive is-primary">Submit</button>
-          </div>
-        </form>
+</div>
       </section>
-
-      <section class="hero is-small has-text-centered">
-        <div class="hero-body">
-          <p class="title" id="activity">Activity here</p>
+   </header>
+   <section>
+    <form>
+    <div class="columns section  container">
+        <div class="column is-one-fourth ">
+          <h2>Type</h2>
+          <div class="control columns">
+            <div class="select column">
+              <select id="select1">
+                <option value="education">education</option>
+                <option value="recreational">recreational</option>
+                <option value="social">social</option>
+                <option value="diy">diy</option>
+                <option value="charity">charity</option>
+                <option value="cooking">cooking</option>
+                <option value="relaxation">relaxation</option>
+                <option value="music">music</option>
+                <option value="busywork">busywork</option>
+              </select>
+            </div>
+          </div>
+            </div>
+            <br>
+            <div class="column is-one-fourth ">
+              <h2>Price</h2>
+              <div class="control columns">
+                <div class="select column">
+                  <select id="select2">
+                    <option value="0">0 - free</option>
+                    <option value="0.1">$</option>
+                    <option value="0.2">$$</option>
+                    <option value="0.3">$$$</option>
+                    <option value="0.4">$$$$</option>
+                    <option value="1">$$$$$</option>
+                  </select>
+                </div>
+              </div>
+                </div> <div class="column is-one-fourth ">
+                  <h2>Participants</h2>
+                  <div class="control columns">
+                    <div class="select column">
+                      <select id="select3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                      </select>
+                    </div>
+                  </div>
+                    </div> <div class="column is-one-fourth ">
+                      <h2>Accessibility</h2>
+                      <div class="control columns">
+                        <div class="select column">
+                          <select id="select4">
+                            <option value="0.0">0 - most accessible</option>
+                            <option value="0.1">1</option>
+                            <option value="0.2">2</option>
+                            <option value="0.3">3</option>
+                            <option value="0.4">4</option>
+                            <option value="1">5-least accessible</option>
+                          </select>
+                        </div>
+                      </div>
+                        </div>
+                        <button class="button is-responsive is-primary" id="submit">
+                          Submit
+                        </button>                 
         </div>
-      </section>
+        <br>
+</div>
+   </div></section>
 
-  <main>
-    <!--Option Cards-->
-    <div>
-      <div class="columns section">
-        <div class="column card ">
-          <text>Type</text>
-          <figure class="card-image">
-            <img src="./assets/images/busywork.png" id="busywork">
-            <img src="./assets/images/charity.png" id="charity">
-            <img src="./assets/images/cooking.png" id="cooking">
-            <img src="./assets/images/diy.png" id="diy">
-            <img src="./assets/images/education.png" id="education">
-            <img src="./assets/images/music.png" id="music">
-            <img src="./assets/images/recreational.png" id="recreational">
-            <img src="./assets/images/relaxation.png" id="relaxation">
-            <img src="./assets/images/social.png" id="social">
-            <p id="type"></p>
-          </figure>
-        </div>
-
-        <div class="column card ">
-          <text>Price</text>
-          <figure class="card-image">
-            <img src="./assets/images/price.png">
-            <p id="price"></p>
-          </figure>
-        </div>
-
-        <div class="column card">
-          <text>Accesibility</text>
-          <figure class="card-image">
-            <img src="./assets/images/accesibility.png">
-            <p id="accessibility"></p>
-          </figure>
-        </div>
-
-        <div class="column card">
-          <text>Participants</text>
-          <figure class="card-image">
-            <img src="./assets/images/participants.png">
-            <p id="participants"></p>
-          </figure>
-        </div>
-      </div>
+   <section class="hero is-small has-text-centered">
+    <div class="hero-body">
+      <p class="title" id="activity">
+        activity here 
+      </p>
+      <h2 id="noact">No activity found! Try again!</h2>
     </div>
-  </main>
-
-    <footer class="section">
-      <div class="card container">
-        <div class="card-content">
-          <img id="cloud-icon" src="./assets/images/cloudy.png" alt="cloud">
-          <p class="title">Weather</p>
-          <!-- fetching weather -->
-          <p class="subtitle">
-            <div class="control">
-              <label for="citynameField"> Enter your city: </label>
-              <input id="citynameField" type="text">
-              <button id="fetch-button" class="btn-cls" type="enterCityName">Get Weather</button>
-              <div id="weather-display">
-                <br>
-                <p>Temperature: <span id="temp" class="resultStl"></span> ºF</p>
-                <p>Wind: <span id="wind" class="resultStl"></span> MPH</p>
-                <p>Humidity: <span id="humidity" class="resultStl"></span>%</p>
+  </section>
+<main >
+  <div>
+    <div class="columns section">
+      <div class="column  card ">
+          <text>Type</text>
+            <figure class="card-image">
+              <img src="./assets/images/busywork.png" id="busywork">
+              <img src="./assets/images/charity.png" id="charity">
+              <img src="./assets/images/cooking.png" id="cooking">
+              <img src="./assets/images/diy.png" id="diy">
+              <img src="./assets/images/education.png" id="education">
+              <img src="./assets/images/music.png" id="music">
+              <img src="./assets/images/recreational.png" id="recreational">
+              <img src="./assets/images/relaxation.png" id="relaxation">
+              <img src="./assets/images/social.png" id="social">
+              <p id="type"></p>
+            </figure>
+          </div>
+          <br>
+          <div class="column card ">
+            <text>Price</text>
+            <figure class="card-image">
+              <img src="./assets/images/price.png">
+              <p id="price"></p>
+            </figure>
+           
               </div>
-            </div>
-          </p>
+              <div class="column  card">
+                <text>Accesibility</text>
+                <figure class="card-image">
+                  <img src="./assets/images/accesibility.png">
+                  <p id="accessibility"></p>
+                </figure>
+                
+                </div>
+                  <div class="column  card">
+                    <text>Participants</text>
+                    <figure class="card-image">
+                      <img src="./assets/images/participants.png">
+                      <p id="participants"></p>
+                    </figure>
+</div>
+</main>
+<footer class="section">
+  <div class="card container">
+    <div class="card-content">
+      <img id="cloud-icon" src="./assets/images/cloudy.png" alt="cloud">
+      <p class="title">
+        Weather
+      </p>
+      <!-- fetching weather -->
+      <p class="subtitle">
+        <div class="control">
+          <label for="citynameField"> Enter your city: </label>
+          <input id="citynameField" type="text">
+          <button id="fetch-button" class="btn-cls" type="enterCityName">Get Weather</button>
+          <div id="weather-display">
+            <br>
+            <p>Temperature: <span id="temp" class="resultStl"></span> F</p>
+            <p>Wind: <span id="wind" class="resultStl"></span> mph</p>
+            <p> Humidity: <span id="humidity" class="resultStl"></span>%</p>
+          </div>
+
         </div>
-      </div>
+      </p>
+    </div>
+    <footer class="card-footer">
+        <span>
+        </span>
+      </p>
     </footer>
+  </div>
+  
+</footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-
-  </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
 </html>
