@@ -4,9 +4,11 @@
 
 This application was created to for users to be presented with activities to battle boredom. 
 
+
 ## Description
 
 BORED NO MO allows users to select an activity type, price, accessibility, and amount of participants to present an activity option. 
+
 
 ## User Story
 
@@ -26,13 +28,15 @@ WHEN I enter my city
 THEN I am presented with current weather conditions in my city
 ```
 
+
 ## Demo
 
 Utilize any web browser:
 
 https://catpolk.github.io/Bored-NO-MO-project-1/
 
-<img src= "./assets/images/placeholder.png">
+<img src="./assets/images/placeholder.jpeg"/>
+
 
 ## Technologies Used
 
@@ -51,6 +55,7 @@ https://catpolk.github.io/Bored-NO-MO-project-1/
 
 • Implement weather to auto populate based on users geolocation
 
+
 ## Contributors
 • Greg Cervantes - https://github.com/GregCervantes
 
@@ -61,6 +66,7 @@ https://catpolk.github.io/Bored-NO-MO-project-1/
 • Diego Medel - https://github.com/medeldiego47
 
 • Catherine Polk - https://github.com/catpolk
+
 
 ## License
 
@@ -85,6 +91,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 
 ## Badges
 
