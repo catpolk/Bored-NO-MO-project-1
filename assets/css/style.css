@@ -22,6 +22,17 @@
     font-size: 20px;
 }
 
-img{height:175px; width: 175px;}
+img{
+    height:175px; 
+    width: 175px;
+}
 
-.label{font-size:24px;font-weight: bolder;}
+.label{
+    font-size:24px;
+    font-weight: bolder;
+}
+
+#card {
+    background-color: #fef6e4;
+    color: rgb(7, 7, 90);
+}
