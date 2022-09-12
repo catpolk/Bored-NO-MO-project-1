@@ -48,7 +48,7 @@ var priceurl = (localStorage.getItem("pricevalue"))
 var parturl = (localStorage.getItem("participantsvalue"))
 var accessurl = (localStorage.getItem("accessvalue"))
 
-var apiurl = 'http://www.boredapi.com/api/activity?type='+ typeurl +'&price='+ priceurl +'&participants=' + parturl +'&accessibility='+ accessurl+'';
+var apiurl = 'https://cors-everywhere.herokuapp.com/http://www.boredapi.com/api/activity?type='+ typeurl +'&price='+ priceurl +'&participants=' + parturl +'&accessibility='+ accessurl+'';
 
 fetch(apiurl)
 .then((response)=> response.json())
