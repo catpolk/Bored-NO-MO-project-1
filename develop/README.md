@@ -32,7 +32,7 @@ Utilize any web browser:
 
 https://catpolk.github.io/Bored-NO-MO-project-1/
 
-<img src= "./assets/images/ .jpg">
+<img src= "./assets/images/placeholder.png">
 
 ## Technologies Used
 
@@ -49,7 +49,7 @@ https://catpolk.github.io/Bored-NO-MO-project-1/
 
 ## Future Development
 
-• Implement weather to auto populate based on users location
+• Implement weather to auto populate based on users geolocation
 
 ## Contributors
 • Greg Cervantes - https://github.com/GregCervantes
