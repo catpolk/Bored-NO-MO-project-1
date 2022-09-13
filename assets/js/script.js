@@ -69,7 +69,7 @@ fetch(apiurl)
     music.style.display = "none";
     recreational.style.display = "none";
     relaxation.style.display = "none";
-    social.style.display = "block";
+    social.style.display = "visible";
     diy.style.display = "none";
 
     } else if (activity.type==="diy"){
@@ -81,10 +81,10 @@ fetch(apiurl)
     recreational.style.display = "none";
     relaxation.style.display = "none";
     social.style.display = "none";
-    diy.style.display = "block";
+    diy.style.display = "visible";
 
     } else if (activity.type==="busywork"){
-    busywork.style.display = "block";
+    busywork.style.display = "visible";
     charity.style.display = "none";
     cooking.style.display = "none";
     education.style.display = "none";
@@ -96,7 +96,7 @@ fetch(apiurl)
 
     } else if (activity.type==="charity"){
     busywork.style.display = "none";
-    charity.style.display = "block";
+    charity.style.display = "visible";
     cooking.style.display = "none";
     education.style.display = "none";
     music.style.display = "none";
@@ -108,7 +108,7 @@ fetch(apiurl)
     } else if (activity.type==="cooking"){
     busywork.style.display = "none";
     charity.style.display = "none";
-    cooking.style.display = "block";
+    cooking.style.display = "visible";
     education.style.display = "none";
     music.style.display = "none";
     recreational.style.display = "none";
@@ -120,7 +120,7 @@ fetch(apiurl)
     busywork.style.display = "none";
     charity.style.display = "none";
     cooking.style.display = "none";
-    education.style.display = "block";
+    education.style.display = "visible";
     music.style.display = "none";
     recreational.style.display = "none";
     relaxation.style.display = "none";
@@ -132,7 +132,7 @@ fetch(apiurl)
     charity.style.display = "none";
     cooking.style.display = "none";
     education.style.display = "none";
-    music.style.display = "block";
+    music.style.display = "visible";
     recreational.style.display = "none";
     relaxation.style.display = "none";
     social.style.display = "none";
@@ -144,7 +144,7 @@ fetch(apiurl)
     cooking.style.display = "none";
     education.style.display = "none";
     music.style.display = "none";
-    recreational.style.display = "block";
+    recreational.style.display = "visible";
     relaxation.style.display = "none";
     social.style.display = "none";
     diy.style.display = "none";
@@ -156,7 +156,7 @@ fetch(apiurl)
     education.style.display = "none";
     music.style.display = "none";
     recreational.style.display = "none";
-    relaxation.style.display = "block";
+    relaxation.style.display = "visible";
     social.style.display = "none";
     diy.style.display = "none";
 
