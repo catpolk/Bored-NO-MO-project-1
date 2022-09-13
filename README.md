@@ -1,27 +1,98 @@
-# apitried-project1
+# Project 1: Interactive Front-End Application
 
-With your team, you'll conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests. You'll also learn about agile development methodologies to help you work collaboratively. You'll implement feature and bug fixes using Git branch workflow and pull requests.
+## Bored NO MO!
 
-You'll write your own user stories and acceptance criteria in GitHub Issues to help your team stay on track with the project. Using GitHub Project to track the status of your project tasks will help you understand the benefits of Kanban boards.
+This application was created to for users to be presented with activities to battle boredom. 
 
-You and your group will use everything you’ve learned over the past six modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
 
-Use a CSS framework other than Bootstrap.
+## Description
 
-Be deployed to GitHub Pages.
+BORED NO MO allows users to select an activity type, price, accessibility, and amount of participants to present an activity option. 
 
-Be interactive (in other words, accept and respond to user input).
 
-Use at least two server-side APIs (Links to an external site.).
+## User Story
 
-Use modals instead of alerts, confirms, or prompts.
+```
+AS A user
+I WANT to be presented with activity options based on selected criteria
+SO THAT I can end the boredom
+```
 
-Use client-side storage to store persistent data.
+## Acceptance Criteria
 
-Be responsive.
+```
+GIVEN a user interface with options
+WHEN I select activity: type, price, accessibility, and participants
+THEN an activity is presented matching my selections
+WHEN I enter my city 
+THEN I am presented with current weather conditions in my city
+```
 
-Have a polished UI.
 
-Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, and so on).
+## Demo
 
-Have a quality README (including a unique name, description, technologies used, screenshot, and link to the deployed application).
+Utilize any web browser:
+
+https://catpolk.github.io/Bored-NO-MO-project-1/
+
+![Bored NO MO](/Bored-NO-MO-project-1/assets/images/placeholder.png)
+
+## Technologies Used
+
+• Bulma: https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css
+
+• Jquery: https://code.jquery.com/jquery-3.4.1.min.js
+
+• Javascript
+
+• Bored API: http://www.boredapi.com/documentation
+
+• Weather API: https://openweathermap.org/api/one-call-api
+
+
+## Future Development
+
+• Implement weather to auto populate based on users geolocation
+
+
+## Contributors
+• Greg Cervantes - https://github.com/GregCervantes
+
+• Gloriana Gonzalez - https://github.com/ggggglo
+
+• Salissa Hernandez - https://github.com/Salissa4
+
+• Diego Medel - https://github.com/medeldiego47
+
+• Catherine Polk - https://github.com/catpolk
+
+
+## License
+
+MIT License
+
+Copyright (c) [2022] 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+## Badges
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
+[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
