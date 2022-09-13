@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <!--header-->
     <header>
       <section class="hero is-primary">
         <div class="hero-body">
@@ -18,7 +19,7 @@
         </div>
       </section>
     </header>
-
+    <!--Dropdown menu for type-->
     <section>
       <form>
         <div class="columns section container">
@@ -40,7 +41,7 @@
               </div>
             </div>
           </div>
-
+          <!--Dropdown for price-->
           <div class="column is-one-fourth ">
             <h2>Price</h2>
             <div class="control columns">
@@ -56,7 +57,7 @@
               </div>
             </div>
           </div> 
-           
+          <!--Dropdown for participants-->
           <div class="column is-one-fourth ">
             <h2>Participants</h2>
             <div class="control columns">
@@ -71,7 +72,7 @@
               </div>
             </div>
           </div> 
-        
+          <!--Dropdown for accessibility-->
           <div class="column is-one-fourth ">
             <h2>Accessibility</h2>
             <div class="control columns">
@@ -88,21 +89,21 @@
             </div>
           </div>
           <span>
-          <br>
-          <br>
-          <button class="button is-responsive is-primary " id="submit">Submit</button>   
+            <br>
+            <br>
+            <button class="button is-responsive is-primary " id="submit">Submit</button>   
           </span>  
         </div>
       </form>
     </section>
-
+    <!--Display activity-->
     <section class="hero is-small has-text-centered">
       <div class="hero-body">
         <p class="title" id="activity">Activity here </p>
         <h2 id="noact">No activity found! Try again!</h2>
       </div>
     </section>
-
+    <!--Cards for corresponding type, price, accessibility and participants-->
     <main>
       <div>
         <div class="columns section">
@@ -148,7 +149,7 @@
         </div>
       </div>
     </main>
-
+    <!--Weather card-->
     <footer class="section">
       <div class="card container">
         <div class="card-content">
@@ -156,12 +157,12 @@
           <p class="title">Weather</p>
           <!-- fetching weather -->
           <p class="subtitle"></p>
-
+         
           <div class="control">
             <label for="citynameField"> Enter your city: </label>
             <input id="citynameField" type="text">
             <button id="fetch-button" class="btn-cls" type="enterCityName">Get Weather</button>
-
+            <!--Weather display-->
             <div id="weather-display">
               <p>Temperature: <span id="temp" class="resultStl"></span> ºF</p>
               <p>Wind: <span id="wind" class="resultStl"></span> MPH</p>
@@ -171,7 +172,7 @@
         </div>
       </div>
     </footer>
-
+    <!--Scripts jquery, js-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
 

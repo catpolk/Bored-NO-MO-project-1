@@ -2,15 +2,18 @@ body {
   background-color:#e1f1ed
 }
 
+/*Image px sizing*/
 img{
   height:175px;
   width: 175px;
 }
 
+/*Header*/
 .title {
   text-align: center;
 }
 
+/*selection styling*/
 .control {
   text-align: center;
 }
@@ -20,6 +23,7 @@ img{
   font-family: nunito;
 }
 
+/*button styling*/
 .button.is-primary {
   background-color: white;
   color: black;
@@ -32,6 +36,7 @@ img{
   color: black;
 }
 
+/*card result styling*/
 .resultStl {
   font-size: 20px;
 }
@@ -41,11 +46,13 @@ img{
   font-weight: bolder;
 }
 
+/*type, price, accessibility, participant card*/
 #card {
   background-color: #FEF6E4;
   color: rgb(7, 7, 90);
 }
 
+/*Weather and weather icon display styling*/
 #weather-display {
   display: none;
 }
