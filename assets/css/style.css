@@ -73,3 +73,34 @@ aside.section {
 .section {
   background: #faeee7;
 }
+#weather-display {
+  display: none;
+}
+.control {
+  text-align: center;
+}
+.title {
+  text-align: center;
+}
+#cloud-icon {
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resultStl {
+  font-size: 20px;
+}
+img{
+  height:175px;
+  width: 175px;
+}
+.label{
+  font-size:24px;
+  font-weight: bolder;
+}
+#card {
+  background-color: #FEF6E4;
+  color: rgb(7, 7, 90);
+}
