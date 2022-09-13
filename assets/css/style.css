@@ -1,38 +1,75 @@
-#weather-display {
-    display: none;
-}
 
-.control {
-    text-align: center;
+.hero.is-primary .title {
+  color: black;
+  font-family: nunito;
 }
-
 .title {
-    text-align: center;
+  font-family: nunito;
 }
 
-#cloud-icon {
-    height: 60px;
-    width: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.hero.is-primary .subtitle {
+  color: #a9a9a9;
 }
 
-.resultStl {
-    font-size: 20px;
+.control-columns {
+  color-scheme: black;
+  font-family: nunito;
 }
 
-img{
-    height:175px; 
-    width: 175px;
+.column {
+  background: #c3f0ca;
+}
+.column.card {
+  background: #fffffe;
+}
+aside.section {
+  background: #fffffe;
 }
 
-.label{
-    font-size:24px;
-    font-weight: bolder;
+.hero-body {
+  background-color: #faeee7;
+}
+.hero.is-small .hero-body {
+  background: #faeee7;
 }
 
-#card {
-    background-color: #fef6e4;
-    color: rgb(7, 7, 90);
+.hero {
+  background: #faeee7;
+}
+
+.button.is-primary {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  font-family: nunito;
+}
+
+.button.button.is-primary:hover {
+  background-color: #ff8ba7;
+  color: black;
+}
+
+.columns.section.container {
+  color: #faeee7;
+}
+.columns.section {
+  background: #faeee7;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  font-family: nunito;
+  font-weight: bold;
+}
+.card-content:first-child {
+  background: white;
+}
+
+.select select:not([multiple]) {
+  background: #faeee7;
+  font-family: nunito;
+}
+.section {
+  background: #faeee7;
 }
