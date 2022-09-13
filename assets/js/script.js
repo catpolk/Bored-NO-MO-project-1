@@ -1,3 +1,4 @@
+// Variables to target text input for cards
 var act = document.querySelector("#activity")
 var accessibility = document.querySelector("#accessibility")
 var type = document.querySelector("#type")
@@ -5,6 +6,7 @@ var participants = document.querySelector("#participants")
 var price = document.querySelector("#price")
 var imgType = document.querySelector("#imgtype")
 
+// Variables to target activities images to display cards
 var diy = document.querySelector("#diy")
 var busywork = document.querySelector("#busywork")
 var charity = document.querySelector("#charity")
@@ -15,18 +17,23 @@ var recreational = document.querySelector("#recreational")
 var relaxation = document.querySelector("#relaxation")
 var social = document.querySelector("#social")
 
+// Variables to target dropdown menus
 var select1 = document.querySelector("#select1")
 var select2 = document.querySelector("#select2")
 var select3 = document.querySelector("#select3")
 var select4 = document.querySelector("#select4")
 
+// Variables to target texts to display or not
 var noAct = document.querySelector("#noact")
 var main = document.querySelector("main")
 
-noAct.style.display = "none"; 
-
+// Variable that targets submit button
 var button = document.querySelector("#submit")
 
+// Code to not display no activity found text
+noAct.style.display = "none"; 
+
+// Event listener in order to locally store values of items selected in dropdown menu by user
 button.addEventListener("click", function(){
   var typeValue= select1.value
   localStorage.setItem("typevalue", typeValue)
@@ -38,18 +45,22 @@ button.addEventListener("click", function(){
   localStorage.setItem("accessvalue",accessValue)
 });
 
+// Get items from local storage in order to display them in the dropdown menus after activity is shown
 $("#select1").val(localStorage.getItem("typevalue"));
 $("#select2").val(localStorage.getItem("pricevalue"));
 $("#select3").val(localStorage.getItem("participantsvalue"));
 $("#select4").val(localStorage.getItem("accessvalue"));
 
+// Variables in order to grab values from dropdown menu to input in api url
 var typeUrl = (localStorage.getItem("typevalue"))
 var priceUrl = (localStorage.getItem("pricevalue"))
 var partUrl = (localStorage.getItem("participantsvalue"))
 var accessUrl = (localStorage.getItem("accessvalue"))
 
+// Bored api data url with variables 
 var apiUrl = 'https://cors-everywhere.herokuapp.com/http://www.boredapi.com/api/activity?type='+ typeUrl +'&price='+ priceUrl +'&participants=' + partUrl +'&accessibility='+ accessUrl+'';
 
+// Fetch function to grab data from api
 fetch(apiUrl)
 .then((response)=> response.json())
 .then((data)=> {
@@ -61,6 +72,7 @@ fetch(apiUrl)
     participants.textContent = activity.participants;
     price.textContent = activity.price
     
+    // From line 76 to line 173, if statements in order to display correct icons in each card element
     if (activity.type==="social"){
     busywork.style.display = "none";
     charity.style.display = "none";
@@ -160,6 +172,7 @@ fetch(apiUrl)
     social.style.display = "none";
     diy.style.display = "none";
 
+    // Code in order to display no activity text when no activity meets parameters
     } else if (activity){
       noAct.style.display = "block";
       main.style.display = "none";
