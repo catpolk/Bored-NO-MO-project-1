@@ -1,11 +1,24 @@
+body {
+  background-color:#e1f1ed
+}
+
+img{
+  height:175px;
+  width: 175px;
+}
+
+.title {
+  text-align: center;
+}
+
+.control {
+  text-align: center;
+}
 
 .control-columns {
   color-scheme: black;
   font-family: nunito;
 }
-
-body{background-color:#e1f1ed}
-
 
 .button.is-primary {
   background-color: white;
@@ -19,34 +32,28 @@ body{background-color:#e1f1ed}
   color: black;
 }
 
+.resultStl {
+  font-size: 20px;
+}
+
+.label {
+  font-size:24px;
+  font-weight: bolder;
+}
+
+#card {
+  background-color: #FEF6E4;
+  color: rgb(7, 7, 90);
+}
+
 #weather-display {
   display: none;
 }
-.control {
-  text-align: center;
-}
-.title {
-  text-align: center;
-}
+
 #cloud-icon {
   height: 60px;
   width: 60px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.resultStl {
-  font-size: 20px;
-}
-img{
-  height:175px;
-  width: 175px;
-}
-.label{
-  font-size:24px;
-  font-weight: bolder;
-}
-#card {
-  background-color: #FEF6E4;
-  color: rgb(7, 7, 90);
 }
