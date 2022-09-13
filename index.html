@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Bored NO MO!</title>
   </head>
 
@@ -18,9 +14,7 @@
       <section class="hero is-primary">
         <div class="hero-body">
           <p class="title container has-text-centered">Bored NO MO!</p>
-          <p class="subtitle container has-text-centered">
-            Activities for those struggling with boredom
-          </p>
+          <p class="subtitle container has-text-centered">Activities for those struggling with boredom</p>
         </div>
       </section>
     </header>
@@ -63,7 +57,7 @@
             </div>
           </div>
 
-          <div class="column is-one-fourth">
+          <div class="column is-one-fourth ">
             <h2>Participants</h2>
             <div class="control columns">
               <div class="select column">
@@ -76,9 +70,9 @@
                 </select>
               </div>
             </div>
-          </div>
-
-          <div class="column is-one-fourth">
+          </div> 
+        
+          <div class="column is-one-fourth ">
             <h2>Accessibility</h2>
             <div class="control columns">
               <div class="select column">
@@ -93,16 +87,14 @@
               </div>
             </div>
           </div>
-          <button class="button is-responsive is-primary" id="submit">
-            Submit
-          </button>
+          <button class="button is-responsive is-primary" id="submit">Submit</button>
         </div>
       </form>
     </section>
 
     <section class="hero is-small has-text-centered">
       <div class="hero-body">
-        <p class="title" id="activity">Activity here</p>
+        <p class="title" id="activity">Activity here </p>
         <h2 id="noact">No activity found! Try again!</h2>
       </div>
     </section>
@@ -110,28 +102,26 @@
     <main>
       <div>
         <div class="columns section">
-          <div class="column card has-text-centered">
+          <div class="column card has-text-centered ">
             <text class="label">Type</text>
             <figure class="card-image">
-              <img src="./assets/images/busywork.png" id="busywork" />
-              <img src="./assets/images/charity.png" id="charity" />
-              <img src="./assets/images/cooking.png" id="cooking" />
-              <img src="./assets/images/diy.png" id="diy" />
-              <img src="./assets/images/education.png" id="education" />
-              <img src="./assets/images/music.png" id="music" />
-              <img src="./assets/images/recreational.png" id="recreational" />
-              <img src="./assets/images/relaxation.png" id="relaxation" />
-              <img src="./assets/images/social.png" id="social" />
+              <img src="./assets/images/busywork.png" id="busywork">
+              <img src="./assets/images/charity.png" id="charity">
+              <img src="./assets/images/cooking.png" id="cooking">
+              <img src="./assets/images/diy.png" id="diy">
+              <img src="./assets/images/education.png" id="education">
+              <img src="./assets/images/music.png" id="music">
+              <img src="./assets/images/recreational.png" id="recreational">
+              <img src="./assets/images/relaxation.png" id="relaxation">
+              <img src="./assets/images/social.png" id="social">
               <p id="type" class="label"></p>
             </figure>
           </div>
 
-          <div class="column card has-text-centered">
+          <div class="column card has-text-centered ">
             <text class="label">Price</text>
             <figure class="card-image">
-              <input class="input" type="text" placeholder="Enter City Name" />
-
-              <img src="./assets/images/price.png" />
+              <img src="./assets/images/price.png">
               <p id="price" class="label"></p>
             </figure>
           </div>
@@ -139,15 +129,15 @@
           <div class="column card has-text-centered">
             <text class="label">Accessibility</text>
             <figure class="card-image">
-              <img src="./assets/images/accesibility.png" />
+              <img src="./assets/images/accesibility.png">
               <p id="accessibility" class="label"></p>
             </figure>
           </div>
-
+          
           <div class="column card has-text-centered">
             <text class="label">Participants</text>
             <figure class="card-image">
-              <img src="./assets/images/participants.png" />
+              <img src="./assets/images/participants.png">
               <p id="participants" class="label"></p>
             </figure>
           </div>
@@ -158,17 +148,15 @@
     <footer class="section">
       <div class="card container">
         <div class="card-content">
-          <img id="cloud-icon" src="./assets/images/cloudy.png" alt="cloud" />
+          <img id="cloud-icon" src="./assets/images/cloudy.png" alt="cloud">
           <p class="title">Weather</p>
           <!-- fetching weather -->
           <p class="subtitle"></p>
 
           <div class="control">
             <label for="citynameField"> Enter your city: </label>
-            <input id="citynameField" type="text" />
-            <button id="fetch-button" class="btn-cls" type="enterCityName">
-              Get Weather
-            </button>
+            <input id="citynameField" type="text">
+            <button id="fetch-button" class="btn-cls" type="enterCityName">Get Weather</button>
 
             <div id="weather-display">
               <p>Temperature: <span id="temp" class="resultStl"></span> ºF</p>
@@ -182,5 +170,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
   </body>
 </html>
