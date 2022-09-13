@@ -3,7 +3,7 @@ var accessibility = document.querySelector("#accessibility")
 var type = document.querySelector("#type")
 var participants = document.querySelector("#participants")
 var price = document.querySelector("#price")
-var imgtype = document.querySelector("#imgtype")
+var imgType = document.querySelector("#imgtype")
 
 var diy = document.querySelector("#diy")
 var busywork = document.querySelector("#busywork")
@@ -20,22 +20,22 @@ var select2 = document.querySelector("#select2")
 var select3 = document.querySelector("#select3")
 var select4 = document.querySelector("#select4")
 
-var noact = document.querySelector("#noact")
+var noAct = document.querySelector("#noact")
 var main = document.querySelector("main")
 
-noact.style.display = "none"; 
+noAct.style.display = "none"; 
 
 var button = document.querySelector("#submit")
 
 button.addEventListener("click", function(){
-  var typevalue= select1.value
-  localStorage.setItem("typevalue", typevalue)
-  var pricevalue= select2.value
-  localStorage.setItem("pricevalue", pricevalue)
-  var participantsvalue = select3.value
-  localStorage.setItem("participantsvalue", participantsvalue)
-  var accessvalue = select4.value
-  localStorage.setItem("accessvalue",accessvalue)
+  var typeValue= select1.value
+  localStorage.setItem("typevalue", typeValue)
+  var priceValue= select2.value
+  localStorage.setItem("pricevalue", priceValue)
+  var participantsValue = select3.value
+  localStorage.setItem("participantsvalue", participantsValue)
+  var accessValue = select4.value
+  localStorage.setItem("accessvalue",accessValue)
 });
 
 $("#select1").val(localStorage.getItem("typevalue"));
@@ -43,14 +43,14 @@ $("#select2").val(localStorage.getItem("pricevalue"));
 $("#select3").val(localStorage.getItem("participantsvalue"));
 $("#select4").val(localStorage.getItem("accessvalue"));
 
-var typeurl = (localStorage.getItem("typevalue"))
-var priceurl = (localStorage.getItem("pricevalue"))
-var parturl = (localStorage.getItem("participantsvalue"))
-var accessurl = (localStorage.getItem("accessvalue"))
+var typeUrl = (localStorage.getItem("typevalue"))
+var priceUrl = (localStorage.getItem("pricevalue"))
+var partUrl = (localStorage.getItem("participantsvalue"))
+var accessUrl = (localStorage.getItem("accessvalue"))
 
-var apiurl = 'https://cors-everywhere.herokuapp.com/http://www.boredapi.com/api/activity?type='+ typeurl +'&price='+ priceurl +'&participants=' + parturl +'&accessibility='+ accessurl+'';
+var apiUrl = 'https://cors-everywhere.herokuapp.com/http://www.boredapi.com/api/activity?type='+ typeUrl +'&price='+ priceUrl +'&participants=' + partUrl +'&accessibility='+ accessUrl+'';
 
-fetch(apiurl)
+fetch(apiUrl)
 .then((response)=> response.json())
 .then((data)=> {
     var activity = data;
@@ -161,7 +161,7 @@ fetch(apiurl)
     diy.style.display = "none";
 
     } else if (activity){
-      noact.style.display = "block";
+      noAct.style.display = "block";
       main.style.display = "none";
     }
   
