@@ -1,41 +1,12 @@
 
-.hero.is-primary .title {
-  color: black;
-  font-family: nunito;
-}
-.title {
-  font-family: nunito;
-}
-
-.hero.is-primary .subtitle {
-  color: #a9a9a9;
-}
-
 .control-columns {
   color-scheme: black;
   font-family: nunito;
 }
 
-.column {
-  background: #c3f0ca;
-}
-.column.card {
-  background: #fffffe;
-}
-aside.section {
-  background: #fffffe;
-}
+body{background-color:#e1f1ed}
 
-.hero-body {
-  background-color: #faeee7;
-}
-.hero.is-small .hero-body {
-  background: #faeee7;
-}
 
-.hero {
-  background: #faeee7;
-}
 
 .button.is-primary {
   background-color: white;
@@ -49,30 +20,6 @@ aside.section {
   color: black;
 }
 
-.columns.section.container {
-  color: #faeee7;
-}
-.columns.section {
-  background: #faeee7;
-  text-align: center;
-  font-weight: bold;
-}
-
-.card {
-  font-family: nunito;
-  font-weight: bold;
-}
-.card-content:first-child {
-  background: white;
-}
-
-.select select:not([multiple]) {
-  background: #faeee7;
-  font-family: nunito;
-}
-.section {
-  background: #faeee7;
-}
 #weather-display {
   display: none;
 }
