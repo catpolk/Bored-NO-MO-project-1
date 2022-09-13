@@ -35,8 +35,7 @@ Utilize any web browser:
 
 https://catpolk.github.io/Bored-NO-MO-project-1/
 
-<img src="./assets/images/placeholder.jpeg"/>
-
+![Bored No Mo]("project1-apitried/assets/images/placeholder.jpeg")
 
 ## Technologies Used
 
