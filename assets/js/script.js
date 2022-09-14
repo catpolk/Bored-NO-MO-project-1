@@ -1,10 +1,12 @@
+// Variables to target text input for cards
 var act = document.querySelector("#activity")
 var accessibility = document.querySelector("#accessibility")
 var type = document.querySelector("#type")
 var participants = document.querySelector("#participants")
 var price = document.querySelector("#price")
-var imgtype = document.querySelector("#imgtype")
+var imgType = document.querySelector("#imgtype")
 
+// Variables to target activities images to display cards
 var diy = document.querySelector("#diy")
 var busywork = document.querySelector("#busywork")
 var charity = document.querySelector("#charity")
@@ -15,42 +17,51 @@ var recreational = document.querySelector("#recreational")
 var relaxation = document.querySelector("#relaxation")
 var social = document.querySelector("#social")
 
+// Variables to target dropdown menus
 var select1 = document.querySelector("#select1")
 var select2 = document.querySelector("#select2")
 var select3 = document.querySelector("#select3")
 var select4 = document.querySelector("#select4")
 
-var noact = document.querySelector("#noact")
+// Variables to target texts to display or not
+var noAct = document.querySelector("#noact")
 var main = document.querySelector("main")
 
-noact.style.display = "none"; 
-
+// Variable that targets submit button
 var button = document.querySelector("#submit")
 
+// Code to not display no activity found text
+noAct.style.display = "none"; 
+
+// Event listener in order to locally store values of items selected in dropdown menu by user
 button.addEventListener("click", function(){
-  var typevalue= select1.value
-  localStorage.setItem("typevalue", typevalue)
-  var pricevalue= select2.value
-  localStorage.setItem("pricevalue", pricevalue)
-  var participantsvalue = select3.value
-  localStorage.setItem("participantsvalue", participantsvalue)
-  var accessvalue = select4.value
-  localStorage.setItem("accessvalue",accessvalue)
+  var typeValue= select1.value
+  localStorage.setItem("typevalue", typeValue)
+  var priceValue= select2.value
+  localStorage.setItem("pricevalue", priceValue)
+  var participantsValue = select3.value
+  localStorage.setItem("participantsvalue", participantsValue)
+  var accessValue = select4.value
+  localStorage.setItem("accessvalue",accessValue)
 });
 
+// Get items from local storage in order to display them in the dropdown menus after activity is shown
 $("#select1").val(localStorage.getItem("typevalue"));
 $("#select2").val(localStorage.getItem("pricevalue"));
 $("#select3").val(localStorage.getItem("participantsvalue"));
 $("#select4").val(localStorage.getItem("accessvalue"));
 
-var typeurl = (localStorage.getItem("typevalue"))
-var priceurl = (localStorage.getItem("pricevalue"))
-var parturl = (localStorage.getItem("participantsvalue"))
-var accessurl = (localStorage.getItem("accessvalue"))
+// Variables in order to grab values from dropdown menu to input in api url
+var typeUrl = (localStorage.getItem("typevalue"))
+var priceUrl = (localStorage.getItem("pricevalue"))
+var partUrl = (localStorage.getItem("participantsvalue"))
+var accessUrl = (localStorage.getItem("accessvalue"))
 
-var apiurl = 'https://cors-everywhere.herokuapp.com/http://www.boredapi.com/api/activity?type='+ typeurl +'&price='+ priceurl +'&participants=' + parturl +'&accessibility='+ accessurl+'';
+// Bored api data url with variables 
+var apiUrl = 'https://cors-everywhere.herokuapp.com/http://www.boredapi.com/api/activity?type='+ typeUrl +'&price='+ priceUrl +'&participants=' + partUrl +'&accessibility='+ accessUrl+'';
 
-fetch(apiurl)
+// Fetch function to grab data from api
+fetch(apiUrl)
 .then((response)=> response.json())
 .then((data)=> {
     var activity = data;
@@ -61,114 +72,45 @@ fetch(apiurl)
     participants.textContent = activity.participants;
     price.textContent = activity.price
     
+    var image = document.querySelector("#image")
+    // From line 76 to line 103, if statements in order to display correct icons in type card element
     if (activity.type==="social"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "block";
-    diy.style.display = "none";
+    image.src = "./assets/images/social.png"
 
     } else if (activity.type==="diy"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "block";
+    image.src = "./assets/images/diy.png"
 
     } else if (activity.type==="busywork"){
-    busywork.style.display = "block";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/busywork.png"
 
     } else if (activity.type==="charity"){
-    busywork.style.display = "none";
-    charity.style.display = "block";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/charity.png"
 
     } else if (activity.type==="cooking"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "block";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/cooking.png"
 
     } else if (activity.type==="education"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "block";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/education.png"
 
     } else if (activity.type==="music"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "block";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/music.png"
 
     } else if (activity.type==="recreational"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "block";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/recreational.png"
 
     } else if (activity.type==="relaxation"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "block";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/relaxation.png"
 
+    // Code in order to display no activity text when no activity meets parameters
     } else if (activity){
-      noact.style.display = "block";
+      noAct.style.display = "block";
       main.style.display = "none";
     }
   
     }
   );
 
-//weather fetching 
+// Weather fetching 
 const apiKey = "fd4520c83ce363d53b2477e844a3ab5f";
 
 var fetchButton = document.getElementById('fetch-button');
@@ -187,6 +129,8 @@ function getApi() {
       .then(function (response) {
         return response.json();
       }).then(function (data){
+        console.log(data);
+        document.getElementById("icon").setAttribute(`src`, `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
         document.getElementById("temp").textContent = data.main.temp;
         document.getElementById("wind").textContent = data.wind.speed;
         document.getElementById("humidity").textContent = data.main.humidity;

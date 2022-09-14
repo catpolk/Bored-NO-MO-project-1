@@ -1,4 +1,44 @@
+body {
+  background-color: #e1f1ed;
+}
+
+/*Image px sizing*/
+img {
+  height: 175px;
+  width: 175px;
+}
+
+/*Header*/
 .title {
+  text-align: center;
+  font-family: snicker, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+}
+
+h2 {
+  font-weight: bolder;
+}
+#activity {
+  text-align: center;
+  font-family: snicker, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.subtitle {
+  font-weight: bolder;
+}
+
+.label2 {
+  color: #ff8ba7;
+  font-size: 30px;
+  font-weight: bolder;
+}
+/*selection styling*/
+.control {
   text-align: center;
 }
 
@@ -10,23 +50,23 @@
   background-color: white;
   color: black;
   border: 2px solid white;
+  font-family: nunito;
 }
 
-.button.button.is-primary:hover {
+/*button styling*/
+.button #submit {
+  color: black;
+  font-family: nunito;
+}
+
+#submit:hover {
   background-color: #ff8ba7;
   color: black;
 }
-.button {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-.hero {
-  background: #dbf9f1c6;
-}
 
-.columns.section {
-  text-align: center;
-  font-weight: bold;
+/*card result styling*/
+.resultStl {
+  font-size: 20px;
 }
 h2 {
   color: black;
@@ -41,20 +81,26 @@ body {
 .card-content:first-child {
   background: white;
 }
+.label {
+  font-size: 24px;
+  font-weight: bolder;
+}
 .card-image {
   background: white;
 }
 
+/*type, price, accessibility, participant card*/
+#card {
+  background-color: #fef6e4;
+  color: rgb(7, 7, 90);
+}
+
+/*Weather and weather icon display styling*/
 #weather-display {
   display: none;
 }
-.control {
-  text-align: center;
-}
-.title {
-  text-align: center;
-}
-#cloud-icon {
+
+#icon {
   height: 60px;
   width: 60px;
   display: block;
@@ -74,4 +120,8 @@ img {
 }
 #card {
   color: rgb(7, 7, 90);
+}
+/* removed arrows next to drop down menu*/
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: transparent;
 }
