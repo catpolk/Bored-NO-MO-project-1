@@ -200,6 +200,8 @@ function getApi() {
       .then(function (response) {
         return response.json();
       }).then(function (data){
+        console.log(data);
+        document.getElementById("icon").setAttribute(`src`, `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
         document.getElementById("temp").textContent = data.main.temp;
         document.getElementById("wind").textContent = data.wind.speed;
         document.getElementById("humidity").textContent = data.main.humidity;
