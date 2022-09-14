@@ -72,105 +72,35 @@ fetch(apiUrl)
     participants.textContent = activity.participants;
     price.textContent = activity.price
     
-    // From line 76 to line 173, if statements in order to display correct icons in each card element
+    var image = document.querySelector("#image")
+    // From line 76 to line 103, if statements in order to display correct icons in each card element
     if (activity.type==="social"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "visible";
-    diy.style.display = "none";
+    image.src = "./assets/images/social.png"
 
     } else if (activity.type==="diy"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "visible";
+    image.src = "./assets/images/diy.png"
 
     } else if (activity.type==="busywork"){
-    busywork.style.display = "visible";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/busywork.png"
 
     } else if (activity.type==="charity"){
-    busywork.style.display = "none";
-    charity.style.display = "visible";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/charity.png"
 
     } else if (activity.type==="cooking"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "visible";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/cooking.png"
 
     } else if (activity.type==="education"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "visible";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/education.png"
 
     } else if (activity.type==="music"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "visible";
-    recreational.style.display = "none";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/music.png"
+
 
     } else if (activity.type==="recreational"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "visible";
-    relaxation.style.display = "none";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/recreational.png"
 
     } else if (activity.type==="relaxation"){
-    busywork.style.display = "none";
-    charity.style.display = "none";
-    cooking.style.display = "none";
-    education.style.display = "none";
-    music.style.display = "none";
-    recreational.style.display = "none";
-    relaxation.style.display = "visible";
-    social.style.display = "none";
-    diy.style.display = "none";
+    image.src = "./assets/images/relaxation.png"
 
     // Code in order to display no activity text when no activity meets parameters
     } else if (activity){
