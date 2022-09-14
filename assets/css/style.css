@@ -24,7 +24,7 @@ img{
 }
 
 /*button styling*/
-.button.is-primary {
+.button.is-primary #submit{
   background-color: white;
   color: black;
   border: 2px solid white;
