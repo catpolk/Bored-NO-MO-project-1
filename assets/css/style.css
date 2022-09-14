@@ -50,3 +50,6 @@ img{
   background-color: #FEF6E4;
   color: rgb(7, 7, 90);
 }
+
+.select:not(.is-multiple):not(.is-loading)::after {
+ border-color: transparent; 
