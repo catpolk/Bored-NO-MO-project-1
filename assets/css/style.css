@@ -24,14 +24,12 @@ img{
 }
 
 /*button styling*/
-.button.is-primary #submit{
-  background-color: white;
+.button #submit{
   color: black;
-  border: 2px solid white;
   font-family: nunito;
 }
 
-.button.button.is-primary:hover {
+#submit:hover {
   background-color: #ff8ba7;
   color: black;
 }

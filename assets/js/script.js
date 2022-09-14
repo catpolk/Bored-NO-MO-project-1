@@ -73,7 +73,7 @@ fetch(apiUrl)
     price.textContent = activity.price
     
     var image = document.querySelector("#image")
-    // From line 76 to line 103, if statements in order to display correct icons in each card element
+    // From line 76 to line 103, if statements in order to display correct icons in type card element
     if (activity.type==="social"){
     image.src = "./assets/images/social.png"
 
@@ -95,7 +95,6 @@ fetch(apiUrl)
     } else if (activity.type==="music"){
     image.src = "./assets/images/music.png"
 
-
     } else if (activity.type==="recreational"){
     image.src = "./assets/images/recreational.png"
 
@@ -111,7 +110,7 @@ fetch(apiUrl)
     }
   );
 
-//weather fetching 
+// Weather fetching 
 const apiKey = "fd4520c83ce363d53b2477e844a3ab5f";
 
 var fetchButton = document.getElementById('fetch-button');
