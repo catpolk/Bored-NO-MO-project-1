@@ -64,3 +64,7 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
+/* removed arrows next to drop down menu*/
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: transparent; 
+ 
