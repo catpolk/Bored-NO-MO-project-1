@@ -1,38 +1,38 @@
 body {
-  background-color:#e1f1ed
+  background-color: #e1f1ed;
 }
 
 /*Image px sizing*/
-img{
-  height:175px;
+img {
+  height: 175px;
   width: 175px;
 }
 
 /*Header*/
 .title {
   text-align: center;
-  font-family: snicker,sans-serif;
+  font-family: snicker, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 100px;
 }
 
-h2{
+h2 {
   font-weight: bolder;
 }
-#activity{
+#activity {
   text-align: center;
-  font-family: snicker,sans-serif;
+  font-family: snicker, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 50px;
 }
 
-.subtitle{
+.subtitle {
   font-weight: bolder;
 }
 
-.label2{
+.label2 {
   color: #ff8ba7;
   font-size: 30px;
   font-weight: bolder;
@@ -44,11 +44,17 @@ h2{
 
 .control-columns {
   color-scheme: black;
+}
+
+.button.is-primary {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
   font-family: nunito;
 }
 
 /*button styling*/
-.button #submit{
+.button #submit {
   color: black;
   font-family: nunito;
 }
@@ -62,15 +68,30 @@ h2{
 .resultStl {
   font-size: 20px;
 }
+h2 {
+  color: black;
+}
+body {
+  background-color: #e1f1ed;
+}
 
+.card {
+  font-weight: bold;
+}
+.card-content:first-child {
+  background: white;
+}
 .label {
-  font-size:24px;
+  font-size: 24px;
   font-weight: bolder;
+}
+.card-image {
+  background: white;
 }
 
 /*type, price, accessibility, participant card*/
 #card {
-  background-color: #FEF6E4;
+  background-color: #fef6e4;
   color: rgb(7, 7, 90);
 }
 
@@ -86,7 +107,21 @@ h2{
   margin-left: auto;
   margin-right: auto;
 }
+.resultStl {
+  font-size: 20px;
+}
+img {
+  height: 175px;
+  width: 175px;
+}
+.label {
+  font-size: 24px;
+  font-weight: bolder;
+}
+#card {
+  color: rgb(7, 7, 90);
+}
 /* removed arrows next to drop down menu*/
 .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: transparent; 
+  border-color: transparent;
 }
