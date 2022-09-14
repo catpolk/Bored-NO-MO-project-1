@@ -11,8 +11,32 @@ img{
 /*Header*/
 .title {
   text-align: center;
+  font-family: snicker,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
 }
 
+h2{
+  font-weight: bolder;
+}
+#activity{
+  text-align: center;
+  font-family: snicker,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.subtitle{
+  font-weight: bolder;
+}
+
+.label2{
+  color: #ff8ba7;
+  font-size: 30px;
+  font-weight: bolder;
+}
 /*selection styling*/
 .control {
   text-align: center;
