@@ -20,13 +20,6 @@ img{
 h2{
   font-weight: bolder;
 }
-#activity{
-  text-align: center;
-  font-family: snicker,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 50px;
-}
 
 .subtitle{
   font-weight: bolder;
@@ -37,6 +30,7 @@ h2{
   font-size: 30px;
   font-weight: bolder;
 }
+
 /*selection styling*/
 .control {
   text-align: center;
@@ -53,11 +47,6 @@ h2{
   font-family: nunito;
 }
 
-#submit:hover {
-  background-color: #ff8ba7;
-  color: black;
-}
-
 /*card result styling*/
 .resultStl {
   font-size: 20px;
@@ -66,6 +55,11 @@ h2{
 .label {
   font-size:24px;
   font-weight: bolder;
+}
+
+/* removed arrows next to drop down menu*/
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: transparent; 
 }
 
 /*type, price, accessibility, participant card*/
@@ -86,7 +80,18 @@ h2{
   margin-left: auto;
   margin-right: auto;
 }
-/* removed arrows next to drop down menu*/
-.select:not(.is-multiple):not(.is-loading)::after {
-  border-color: transparent; 
+
+/* hover color */
+#submit:hover {
+  background-color: #ff8ba7;
+  color: black;
+}
+
+/*activity container */
+#activity{
+  text-align: center;
+  font-family: snicker,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
 }
