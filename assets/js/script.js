@@ -115,6 +115,9 @@ const apiKey = "fd4520c83ce363d53b2477e844a3ab5f";
 var fetchButton = document.getElementById('fetch-button');
 fetchButton.addEventListener('click', getApi);
 
+var weatherIcon = document.querySelector("#icon")
+weatherIcon.style.display = "none"
+
 function getApi() {
   var cityName = document.getElementById("citynameField").value;
   var geoRequestUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${apiKey}`;
@@ -129,7 +132,8 @@ function getApi() {
         return response.json();
       }).then(function (data){
         console.log(data);
-        document.getElementById("icon").setAttribute(`src`, `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
+        weatherIcon.style.display = "block";
+        weatherIcon.setAttribute(`src`, `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
         document.getElementById("temp").textContent = data.main.temp;
         document.getElementById("wind").textContent = data.wind.speed;
         document.getElementById("humidity").textContent = data.main.humidity;
