@@ -136,7 +136,8 @@ function getApi() {
         document.getElementById("weather-display").style.display = "block";
       });
     }).catch(function(){
-      alert('City entered incorrectly');
+      var alert = document.getElementById("modal-js-example");
+      alert.classList.add("is-active");
     }); 
     
 }
