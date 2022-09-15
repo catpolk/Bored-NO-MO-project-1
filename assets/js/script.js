@@ -106,7 +106,6 @@ fetch(apiUrl)
       noAct.style.display = "block";
       main.style.display = "none";
     }
-  
     }
   );
 
