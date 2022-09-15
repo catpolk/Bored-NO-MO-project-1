@@ -107,3 +107,12 @@ h2 {
   font-style: normal;
   font-size: 50px;
 }
+/*css for no activity found text*/
+#noact{
+  font-family: snicker, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  color: red;
+}
+
