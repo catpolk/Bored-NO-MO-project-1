@@ -24,6 +24,7 @@ h2 {
 
 .subtitle {
   font-weight: bolder;
+  color: #ff8ba7;
 }
 
 .label2 {
@@ -67,17 +68,30 @@ h2 {
 }
 
 .label {
-  font-size: 24px;
-  font-weight: bolder;
+  font-family: felt-tip-woman, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
 }
 
 .card-image {
   background: white;
 }
 
+.label2{  
+  font-family: felt-tip-woman, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+
 /* removed arrows next to drop down menu*/
 .select:not(.is-multiple):not(.is-loading)::after {
   border-color: transparent;
+}
+
+.weather{
+  font-size: 50px;
 }
 
 /*type, price, accessibility, participant card*/
@@ -97,6 +111,8 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ff8ba7;
+  border-radius: 100px;
 }
 
 /*activity container */
@@ -116,11 +132,25 @@ h2 {
   color: red;
 }
 
-.weather{
-  font-size: 50px;
+#activity{
+  text-decoration:underline;
 }
 
-#icon{
-  background-color: #ff8ba7;
-  border-radius: 100px;
+p, h2, select, #submit{
+  font-family: felt-tip-woman, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+}
+
+@media screen and (min-width:768px){
+  .card{
+    margin: 10px;
+  }
+  .container{
+    margin-left: 75px;
+  }
+  #submit{
+    margin-top: 10px;
+  }
 }
