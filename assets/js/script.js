@@ -73,7 +73,7 @@ fetch(apiUrl)
     price.textContent = activity.price
     
     var image = document.querySelector("#image")
-    // From line 76 to line 103, if statements in order to display correct icons in type card element
+    // From line 76 to line 102, if statements in order to display correct icons in type card element
     if (activity.type==="social"){
     image.src = "./assets/images/social.png"
 
