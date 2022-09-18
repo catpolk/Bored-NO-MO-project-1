@@ -35,7 +35,7 @@ Utilize any web browser:
 
 https://catpolk.github.io/Bored-NO-MO-project-1/
 
-![Bored NO MO](/Bored-NO-MO-project-1/assets/images/bored.png)
+![Bored NO MO](/assets/images/bored.png)
 
 ## Technologies Used
 
@@ -53,7 +53,9 @@ https://catpolk.github.io/Bored-NO-MO-project-1/
 ## Future Development
 
 • Implement weather to auto populate based on users geolocation
+
 • When activities are recommended, showing nearest places on map to user
+
 • Include instructional videos for certain activities
 
 
